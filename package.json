@@ -1,0 +1,33 @@
+{
+  "name": "love-letter",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "photos": "node scripts/sync-photos.mjs",
+    "predev": "npm run photos",
+    "dev": "vite",
+    "prebuild": "npm run photos",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/pinyon-script": "^5.3.0",
+    "motion": "^14.9.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "tailwindcss": "^4.3.4",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.6"
+  }
+}
